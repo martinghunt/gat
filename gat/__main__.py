@@ -12,6 +12,7 @@ def main(args=None):
     )
 
     parser.add_argument("--version", action="version", version=gat.__version__)
+    parser.add_argument("-y", help="Literally does nothing")
     parser.add_argument("x", help="mysterious x option")
     args = parser.parse_args()
     print("Hello", args.x, gat.foo.bar())
