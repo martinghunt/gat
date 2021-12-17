@@ -67,3 +67,10 @@ jobs:
             ls
         fi
 
+    - name: Release
+      if: startsWith(github.event.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: gat*.img
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
