@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gat",
-    version="0.0.5",
+    version="0.0.6",
     description="gat: github actions testing",
     packages=find_packages(exclude=["tests"]),
     author="Martin Hunt",
